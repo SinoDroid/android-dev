@@ -32,3 +32,5 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="681c", MODE="0600", 
 SUBSYSTEM=="usb", ATTR{idVendor}=="1949", ATTR{idProduct}=="0006", MODE="0600", OWNER="<username>"
 # adb protocol (Motorola PCS Motorola Droid (USB Debug))
 SUBSYSTEM=="usb", ATTR{idVendor}=="22b8", ATTR{idProduct}=="41db", MODE="0600", OWNER="<username>"
+# adb protocol (Huawei Technologies Co., Ltd.)
+SUBSYSTEM=="usb", ATTR{idVendor}=="12d1", ATTR{idProduct}=="9025", MODE="0600", OWNER="<username>"
