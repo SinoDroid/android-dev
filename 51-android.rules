@@ -22,15 +22,17 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="0451", ATTR{idProduct}=="d022", MODE="0600", 
 SUBSYSTEM=="usb", ATTR{idVendor}=="19d2", ATTR{idProduct}=="0083", MODE="0600", OWNER="<username>"
 # fastboot protocol on panda (PandaBoard)
 SUBSYSTEM=="usb", ATTR{idVendor}=="0451", ATTR{idProduct}=="d010", MODE="0600", OWNER="<username>"
-# usbboot protocol (?Huawei)
+# usbboot protocol on panda (?Huawei)
 SUBSYSTEM=="usb", ATTR{idVendor}=="19d2", ATTR{idProduct}=="1350", MODE="0600", OWNER="<username>"
-# fastboot protocol (?Huawei)
+# fastboot protocol on panda (?Huawei)
 SUBSYSTEM=="usb", ATTR{idVendor}=="19d2", ATTR{idProduct}=="0083", MODE="0600", OWNER="<username>"
 # adb protocol (Samsung Electronics Co., Ltd Galaxy Portal/Spica Android Phone)
 SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="681c", MODE="0600", OWNER="<username>"
-# adb protocol (Lab126 Kindle fire)
+# adb protocol (Lab126)
 SUBSYSTEM=="usb", ATTR{idVendor}=="1949", ATTR{idProduct}=="0006", MODE="0600", OWNER="<username>"
 # adb protocol (Motorola PCS Motorola Droid (USB Debug))
 SUBSYSTEM=="usb", ATTR{idVendor}=="22b8", ATTR{idProduct}=="41db", MODE="0600", OWNER="<username>"
 # adb protocol (Huawei Technologies Co., Ltd.)
 SUBSYSTEM=="usb", ATTR{idVendor}=="12d1", ATTR{idProduct}=="9025", MODE="0600", OWNER="<username>"
+# adb protocol (Samsung Electronics Co., Ltd. Galaxy note)
+SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="685e", MODE="0600", OWNER="<username>"
