@@ -4,10 +4,8 @@
 
 
 # The absolute path for the keystore.
-KEYSTORE="/usr/local/android/android-sdk/keystore/xiaominyang@dolphin.keystore"
+KEYSTORE="/usr/local/android/keystore/xiaominyang@dolphin.keystore"
 
 cd `pwd`
 zip -d $1 META-INF/*
-jarsigner -verbose -keystore $KEYSTORE $1 androiddebugkey << EOF
-android
-EOF
+jarsigner  -storepass android -keystore $KEYSTORE $1 androiddebugkey && echo "Resign successfully"
